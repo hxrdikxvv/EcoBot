@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoBot Chat</title>
+    <link rel="stylesheet" href="/index.css">
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">EcoBot🌱 Chat</div>
+      <div class="nav-right">
+        <div class="nav-right-sec1">
+          <ul class="list-items">
+            <li onclick="window.location.href='main.html'">Home</li>
+            <li onclick="window.location.href='about.html'">About Us</li>
+            <li onclick="window.location.href='about.html#team'">Team</li>
+          </ul>
+        </div>
+        <div class="nav-right-sec2">
+          <div class="eco-points">EcoPoints: 120</div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="chat-container">
+      <div id="messages" class="messages">
+        <div class="message bot">
+          Hello 👋, I’m EcoBot. Upload an image or type your query, and I’ll tell you if it’s biodegradable or not.
+        </div>
+      </div>
+
+      <div class="input-area">
+        <label for="fileUpload" class="upload-label">📷</label>
+        <input type="text" placeholder="Type your message..." />
+        <button class="send-btn">Send</button>
+      </div>
+    </div>
+    <script src="/index.js"></script>
+  </body>
+</html>

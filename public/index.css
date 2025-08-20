@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f4f6f9;
+  color: #333;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 12px 12px;
+}
+
+.nav-left {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #1b4332;
+  align-items: center;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-right-sec1 .list-items {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.list-items li {
+  cursor: pointer;
+  font-weight: 500;
+  color: #333;
+  transition: color 0.2s ease;
+}
+
+.list-items li:hover {
+  color: #4caf50;
+}
+
+.nav-right-sec2 {
+  display: flex;
+  align-items: center;
+}
+
+.eco-points {
+  font-weight: 600;
+  color: #4caf50;
+  font-size: 1rem;
+  padding: 6px 12px;
+  border: 2px solid #4caf50;
+  border-radius: 6px;
+  background: #e8f5e9;
+}
+
+.chat-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+  width: 100%;
+  height: calc(100vh - 60px);
+  box-sizing: border-box;
+}
+
+.messages {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 15px;
+  overflow-y: auto;
+  align-items: flex-start;
+}
+
+#messages::-webkit-scrollbar {
+  width: 8px;
+}
+
+#messages::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+#messages::-webkit-scrollbar-thumb {
+  background: #4caf50;
+  border-radius: 10px;
+}
+
+#messages::-webkit-scrollbar-thumb:hover {
+  background: #2d6a4f;
+}
+
+#messages {
+  scrollbar-width: thin;
+  scrollbar-color: #4caf50 #f1f1f1;
+}
+
+.message {
+  margin: 10px 0;
+  padding: 12px 16px;
+  border-radius: 12px;
+  max-width: 70%;
+  line-height: 1.4;
+  font-size: 0.95rem;
+}
+
+.message.user {
+  align-self: flex-end;
+  background: #4caf50;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 16px 16px 0 16px;
+  max-width: 70%;
+  word-wrap: break-word;
+  text-align: right;
+}
+
+.right-img {
+  float: right;
+  width: 100px;
+  margin-left: auto;
+}
+
+.message.bot {
+  align-self: flex-start;
+  background: #f1f1f1;
+  color: #222;
+  padding: 8px 12px;
+  border-radius: 16px 16px 16px 0;
+  max-width: 70%;
+  word-wrap: break-word;
+  text-align: left;
+  font-weight: 500;
+}
+
+.input-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  background: #fff;
+  position: sticky;
+  bottom: 10px;
+}
+
+.input-area input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+}
+
+.input-area input[type="file"] {
+  display: none;
+}
+
+.upload-label {
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  background: #f1f1f1;
+  transition: 0.2s ease;
+}
+
+.upload-label:hover {
+  background: #e0e0e0;
+}
+
+.send-btn {
+  background: #1b4332;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.send-btn:hover {
+  background: #2d6a4f;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoBot</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stylemain.css" />
+    <link rel="stylesheet" href="utilitymain.css" />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  </head>
+  <body>
+    <nav class="flex poppins">
+      <div class="nav-left">EcoBot</div>
+      <div class="nav-right flex">
+        <div class="nav-right-sec1">
+          <ul class="list-items flex">
+            <li onclick="window.location.href='main.html'">Home</li>
+            <li onclick="window.location.href='about.html#team'">Team</li>
+            <li onclick="window.location.href='about.html'">About Us</li>
+          </ul>
+        </div>
+        <div class="nav-right-sec2">
+          <button onclick="window.location.href='login.html'" class="nav-btn btn">Login</button>
+          <button onclick="window.location.href='signup.html'" class="nav-btn btn">Sign Up</button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container flex">
+      <section class="hero">
+        <h1>Track. Act. Save. — Your Smart Eco Companion</h1>
+        <p>
+          EcoBot helps you make <span id="typing"></span> choices every day.
+          <br />
+          Earn EcoPoints, track your impact, and be part of the change.
+        </p>
+        <button onclick="window.location.href='signup.html'" class="btn">Get Started</button>
+      </section>
+    </div>
+
+    <section class="features">
+      <h2>What EcoBot Offers 🌱</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <i class="fas fa-leaf"></i>
+          <h3>Earn EcoPoints</h3>
+          <p>Get rewarded for every eco-friendly action you take and grow your green score.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-chart-line"></i>
+          <h3>Track Your Impact</h3>
+          <p>Visualize your contributions and see how your efforts help the planet.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-hands-helping"></i>
+          <h3>Join Green Challenges</h3>
+          <p>Participate in fun challenges with friends and make sustainability exciting.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-recycle"></i>
+          <h3>Waste Management Help</h3>
+          <p>Learn smarter ways to manage waste and recycle more efficiently.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="chatbot-section">
+      <div class="chatbot-container">
+        <h2>Meet Your EcoBot Assistant</h2>
+        <p>
+          Have doubts about waste disposal? Upload an image or ask your query — 
+          EcoBot will guide you on whether it’s biodegradable and how to manage it responsibly.
+          <br><br>
+          Start your green journey with our AI-powered assistant today.
+        </p>
+        <button onclick="window.location.href='/'">Start Chatting</button>
+      </div>
+    </section>
+
+    <script>
+      var typed = new Typed("#typing", {
+        strings: [
+          "<span style='color: green;'>Smarter</span>",
+          "<span style='color: green;'>Eco-Friendly</span>"
+        ],
+        typeSpeed: 100,
+        backSpeed: 50,
+        loop: true
+      });
+    </script>
+  </body>
+</html>

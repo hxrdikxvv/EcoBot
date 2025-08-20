@@ -1,0 +1,15 @@
+.poppins{
+    font-family: 'Poppins', sans-serif;
+}
+.flex{
+    display: flex;
+}
+.btn{
+    
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+}

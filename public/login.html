@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EcoBot | Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins',sans-serif; }
+    body {
+      background:#f0f8f4;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
+    }
+    .auth-container {
+      background:#fff;
+      padding:40px;
+      border-radius:12px;
+      box-shadow:0 6px 16px rgba(0,0,0,0.15);
+      max-width:380px;
+      width:100%;
+      text-align:center;
+    }
+    h1 {
+      color:#1b4332;
+      margin-bottom:10px;
+    }
+    p {
+      color:#555;
+      font-size:0.9rem;
+      margin-bottom:25px;
+    }
+    input {
+      width:100%;
+      padding:12px;
+      margin:10px 0;
+      border:1px solid #b7e4c7;
+      border-radius:8px;
+      outline:none;
+      font-size:0.95rem;
+    }
+    button {
+      width:100%;
+      padding:12px;
+      background:#1b4332;
+      border:none;
+      border-radius:8px;
+      color:#fff;
+      font-size:1rem;
+      cursor:pointer;
+      transition:0.2s ease;
+    }
+    button:hover { background:#2d6a4f; }
+    .switch {
+      margin-top:15px;
+      font-size:0.9rem;
+    }
+    .switch a {
+      color:#1b4332;
+      text-decoration:none;
+      font-weight:600;
+    }
+    .switch a:hover { text-decoration:underline; }
+  </style>
+</head>
+<body>
+  <div class="auth-container">
+    <h1>Welcome Back 🌱</h1>
+    <p>Login to continue your eco journey</p>
+    <!-- <form>
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form> -->
+
+
+
+    <form action="/login" method="POST">
+  <input type="email" name="email" placeholder="Email" required />
+  <input type="password" name="password" placeholder="Password" required />
+  <button type="submit">Login</button>
+</form>
+
+
+
+
+
+
+
+
+    <div class="switch">
+      Don’t have an account? <a href="signup.html">Sign Up</a>
+    </div>
+  </div>
+</body>
+</html>

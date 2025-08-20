@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - EcoBot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="stylemain.css" />
+  <link rel="stylesheet" href="utilitymain.css" />
+  <style>
+
+    html {
+  scroll-behavior: smooth;
+}
+
+.about-hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(
+      135deg,
+      rgba(56, 142, 60, 0.95),
+      rgba(27, 94, 32, 0.95)
+  );
+  color: #f4f4f4;
+}
+
+.about-hero h1 {
+  font-size: 2.8rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.about-hero p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.mission-vision {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.mission, .vision {
+  flex: 1 1 400px;
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.mission h2, .vision h2 {
+  color: #2e7d32;
+  margin-bottom: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.mission p, .vision p {
+  color: #555;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
+
+
+.team-section {
+  text-align: center;
+  padding: 80px 20px;
+  background: #f5f5dc;
+}
+
+.team-section h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.2rem;
+  color: #2e7d32;
+  margin-bottom: 50px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.team-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.team-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.team-card h3 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 8px;
+  color: #2e7d32;
+}
+
+.team-card p {
+  font-family: 'Poppins', sans-serif;
+  color: #555;
+  font-size: 1rem;
+}
+
+  </style>
+</head>
+<body>
+ 
+  <nav class="flex poppins">
+    <div class="nav-left">EcoBot</div>
+    <div class="nav-right flex">
+      <div class="nav-right-sec1">
+        <ul class="list-items flex">
+          <li onclick="window.location.href='main.html'">Home</li>
+          <li onclick="window.location.href='about.html#team'" >Team</li>
+          <li onclick="window.location.href='about.html'">About Us</li>
+        </ul>
+      </div>
+      <div class="nav-right-sec2">
+        <button onclick="window.location.href='login.html'" class="nav-btn btn">Login</button>
+        <button onclick="window.location.href='signup.html'" class="nav-btn btn">Sign Up</button>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="hero about-hero">
+    <h1>About EcoBot 🌱</h1>
+    <p>
+      EcoBot is your smart companion for sustainable living. Our mission is to empower individuals to make eco-friendly choices, track their impact, and participate in green challenges.  
+      <br><br>
+      Together, we can make a difference for the planet.
+    </p>
+  </section>
+
+
+  <section class="mission-vision">
+    <div class="mission">
+      <h2>Our Mission</h2>
+      <p>
+        To make sustainable living easy and rewarding by guiding users to adopt eco-friendly habits and track their environmental impact.
+      </p>
+    </div>
+    <div class="vision">
+      <h2>Our Vision</h2>
+      <p>
+        A world where everyone makes informed, green choices every day, contributing to a healthier planet and future generations.
+      </p>
+    </div>
+  </section>
+
+
+  <section id="team" class="team-section">
+    <h2>Meet Our Team 👩‍💻👨‍💻</h2>
+    <div class="team-grid">
+      <div class="team-card">
+        
+        <h3>Hardik</h3>
+        <p>Founder & Full Stack Developer</p>
+      </div>
+      <div class="team-card">
+       
+        <h3>Udit</h3>
+        <p>AI & Backend Specialist</p>
+      </div>
+      
+    </div>
+  </section>
+
+</body>
+</html>
